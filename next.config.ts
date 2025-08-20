@@ -26,7 +26,7 @@ const nextConfig: NextConfig = {
         hostname: "**",
         pathname: "/uploads/**",
       },
-      // إضافة دعم لـ Strapi على Vercel
+     
       {
         protocol: "https",
         hostname: "*.vercel.app",
