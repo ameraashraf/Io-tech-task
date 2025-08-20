@@ -203,9 +203,25 @@ The project includes a complete Strapi CMS backend in the `my-project/` director
 
 ## 📝 **Environment Variables**
 
+### Local Development
+
 ```env
-NEXT_PUBLIC_API_URL=http://localhost:1337/api
+NEXT_PUBLIC_API_URL=http://localhost:1337
 ```
+
+### Vercel Deployment
+
+For production deployment on Vercel, you need to set the environment variable in your Vercel project settings:
+
+1. Go to your Vercel dashboard
+2. Select your project
+3. Go to Settings → Environment Variables
+4. Add a new variable:
+   - **Name**: `NEXT_PUBLIC_API_URL`
+   - **Value**: Your Strapi backend URL (e.g., `https://your-strapi-app.herokuapp.com` or your deployed Strapi URL)
+   - **Environment**: Production (and Preview if needed)
+
+**Important**: Make sure your Strapi backend is deployed and accessible from the internet for the images to load properly.
 
 ## 🎨 **Design System**
 

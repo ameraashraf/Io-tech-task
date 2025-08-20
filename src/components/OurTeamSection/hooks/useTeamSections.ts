@@ -1,8 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
+import { TeamSectionResponse, TeamMemberType } from "@/app/types/types";
 import { fetchTeamSections } from "../services/teamSections";
-import { TeamMemberType, TeamSectionResponse } from "@/app/types/types";
 
-const API_BASE_URL = "http://localhost:1337";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337";
 
 export const useTeamSections = (locale: string = "en") => {
   return useQuery({

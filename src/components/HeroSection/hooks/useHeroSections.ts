@@ -1,8 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
-import { fetchHeroSections } from "../services/heroSections";
 import { HeroSectionResponse } from "@/app/types/types";
+import { fetchHeroSections } from "../services/heroSections";
 
-const API_BASE_URL = "http://localhost:1337";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337";
 
 export const useHeroSections = (locale: string = "en") => {
   return useQuery({

@@ -1,0 +1,25 @@
+# Exclude Strapi backend project
+my-project/
+
+# Exclude development files
+.DS_Store
+*.log
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Exclude build artifacts
+.next/
+out/
+dist/
+
+# Exclude node_modules (should be installed fresh)
+node_modules/
+
+# Exclude git files
+.git/
+.gitignore
+
+# Exclude TypeScript build info
+*.tsbuildinfo 

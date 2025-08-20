@@ -1,14 +1,14 @@
 import axios from "axios";
 import { HeroSectionResponse } from "@/app/types/types";
 
-const API_BASE_URL = "http://localhost:1337/api";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337";
 
 export const fetchHeroSections = async (
   locale: string = "en"
 ): Promise<HeroSectionResponse> => {
   try {
     const response = await axios.get(
-      `${API_BASE_URL}/hero-sections?populate[heroSection][populate]=*&locale=${locale}`
+      `${API_BASE_URL}/api/hero-sections?populate[heroSection][populate]=*&locale=${locale}`
     );
     return response.data;
   } catch (error) {
