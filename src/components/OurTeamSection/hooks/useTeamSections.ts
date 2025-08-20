@@ -26,7 +26,9 @@ export const transformTeamMembers = (
     position: member.description,
     image: member.memberImage.url.startsWith("http")
       ? member.memberImage.url
-      : `${API_BASE_URL}${member.memberImage.url}`,
+      : member.memberImage.url.startsWith("/")
+      ? `${API_BASE_URL}${member.memberImage.url}`
+      : `${API_BASE_URL}/${member.memberImage.url}`,
     icons: {
       whatsapp: "/icon1.png",
       phone: "/phone.png",

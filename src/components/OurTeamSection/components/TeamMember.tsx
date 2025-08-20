@@ -54,7 +54,17 @@ export default function TeamMember({ member }: TeamMemberProps) {
       viewport={{ once: true }}
     >
       <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
-        <Image src={member.image} alt={member.title} width={269} height={184} />
+        <Image
+          src={member.image}
+          alt={member.title}
+          width={269}
+          height={184}
+          onError={(e) => {
+            // إذا فشلت الصورة، استخدم الصورة الافتراضية
+            const target = e.target as HTMLImageElement;
+            target.src = "/Man.png";
+          }}
+        />
       </motion.div>
 
       <motion.h5

@@ -34,7 +34,9 @@ export const transformClientTestimonials = (
       image: item.clientImage?.url
         ? item.clientImage.url.startsWith("http")
           ? item.clientImage.url
-          : `${API_BASE_URL}${item.clientImage.url}`
+          : item.clientImage.url.startsWith("/")
+          ? `${API_BASE_URL}${item.clientImage.url}`
+          : `${API_BASE_URL}/${item.clientImage.url}`
         : "/Man.png",
     })
   );

@@ -72,6 +72,11 @@ export default function TestimonialSlide({
           width={374}
           height={374}
           className="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[374px] h-auto"
+          onError={(e) => {
+            // إذا فشلت الصورة، استخدم الصورة الافتراضية
+            const target = e.target as HTMLImageElement;
+            target.src = "/Man.png";
+          }}
         />
       </motion.div>
 
