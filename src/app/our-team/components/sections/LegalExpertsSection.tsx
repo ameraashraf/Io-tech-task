@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 import { useHydrationSafeTranslation } from "@/hooks/useHydrationSafeTranslation";
 
 interface Member {
-  id: string | number;
+  id?: string | number;
   title: string;
   position: string;
   image: string;
-  icons?: { whatsapp: string; phone: string; email: string };
-  links?: { whatsapp: string; phone: string; email: string };
+  icons?: { [key: string]: string };
+  links?: { [key: string]: string };
 }
 
 const cardVariants = {

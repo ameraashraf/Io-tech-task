@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState, AppDispatch } from "@/store/store";
@@ -37,7 +37,7 @@ const sectionVariants = {
   },
 };
 
-export default function SearchResultsPage() {
+function SearchResultsContent() {
   const searchParams = useSearchParams();
   const dispatch = useDispatch<AppDispatch>();
   const { results, isLoading, error } = useSelector(
@@ -104,5 +104,19 @@ export default function SearchResultsPage() {
         </div>
       </motion.div>
     </motion.div>
+  );
+}
+
+export default function SearchResultsPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-white flex items-center justify-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+        </div>
+      }
+    >
+      <SearchResultsContent />
+    </Suspense>
   );
 }

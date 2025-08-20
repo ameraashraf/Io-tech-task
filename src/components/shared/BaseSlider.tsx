@@ -138,7 +138,11 @@ export default function BaseSlider({
       }
 
       // Update autoplay direction based on RTL state
-      if (swiperRef.current.params && swiperRef.current.params.autoplay) {
+      if (
+        swiperRef.current.params &&
+        swiperRef.current.params.autoplay &&
+        typeof swiperRef.current.params.autoplay === "object"
+      ) {
         // Use custom direction if provided, otherwise use default RTL logic
         const reverseDirection =
           customAutoplayDirection !== undefined
