@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_icons_data",
+  "info": {
+    "displayName": "Data"
+  },
+  "options": {},
+  "attributes": {
+    "amera": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

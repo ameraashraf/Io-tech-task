@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "client_sections",
+  "info": {
+    "singularName": "client-section",
+    "pluralName": "client-sections",
+    "displayName": "client-section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "sectionTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sectionDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "clientData": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "client-component.client",
+      "repeatable": true
+    }
+  }
+}

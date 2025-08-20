@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_services_services",
+  "info": {
+    "displayName": "service"
+  },
+  "options": {},
+  "attributes": {
+    "serviceName": {
+      "type": "string"
+    },
+    "serviceHref": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

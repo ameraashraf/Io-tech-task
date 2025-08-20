@@ -1,0 +1,420 @@
+{
+  "header": {
+    "nav": {
+      "aboutUs": "About us",
+      "services": "Services",
+      "ourTeam": "Our team",
+      "blogs": "Blogs",
+      "contactUs": "Contact us"
+    },
+    "services": {
+      "legalConsultation": "Legal Consultation Services",
+      "foreignInvestment": "Foreign Investment Services",
+      "contracts": "Contracts",
+      "insurance": "Insurance",
+      "defenseInAllCases": "....... and Defense in All Cases",
+      "banksFinancial": "Banks and Financial Institutions",
+      "corporateGovernance": "Corporate Governance,Companies Liquidation",
+      "internalRegulations": "Internal Regulations for Companies",
+      "servicesForCompanies": "Sevices for Companies and Institutions",
+      "arbitration": "Arbitration",
+      "intellectualProperty": "Intellectual Property",
+      "corporateRestructuring": "Corporate Restructuring and Reorganization",
+      "establishingCompanies": "Establishing National and Foreign Companies",
+      "commercialAgencies": "Commercial Agencies",
+      "supportingVision2030": "Supporting Vision 2030",
+      "companiesLiquidation": "Companies Liquidation"
+    },
+    "search": {
+      "placeholder": "Search…",
+      "searchTheSite": "Search the site",
+      "openSearch": "Open search",
+      "closeSearch": "Close search"
+    },
+    "bookAppointment": "Book Appointment"
+  },
+  "footer": {
+    "contacts": "Contacts",
+    "subscribe": "Subscribe",
+    "subscribing": "Subscribing...",
+    "checking": "Checking...",
+    "email": "Email",
+    "emailPlaceholder": "Email",
+    "subscribeToNewsletter": "Subscribe to newsletter",
+    "alreadySubscribed": "You are already subscribed!",
+    "subscriptionSuccessful": "Subscription successful!",
+    "subscriptionError": "There was an error during subscription.",
+    "checkSubscriptionError": "Failed to check subscription. Please try again.",
+    "links": {
+      "about": "About",
+      "ourStrategy": "Our Strategy",
+      "ourAdvantages": "Our Advantages",
+      "socialResponsibility": "Social Responsibility",
+      "ourServices": "Our Services"
+    },
+    "copyright": "All rights reserved.",
+    "socialMedia": "Social media"
+  },
+  "common": {
+    "back": "Back"
+  },
+  "pages": {
+    "searchResults": {
+      "title": "Search Results",
+      "noResults": "No results found. Try a different search term.",
+      "resultsFor": "Results for",
+      "loading": "Searching...",
+      "error": "Error loading search results",
+      "showingResults": "Showing {start} to {end} of {total} results",
+      "itemsPerPage": "Items per page:",
+      "readMore": "Read more",
+      "readLess": "Read less",
+      "page": "Page {current} of {total}",
+      "previousPage": "Go to previous page",
+      "nextPage": "Go to next page",
+      "goToPage": "Go to page {page}",
+      "morePages": "More pages",
+      "searchHint": "Press Enter or click search to find results",
+      "arabicSearchHint": "Searching in Arabic content"
+    },
+    "searchCategories": {
+      "team": "Team",
+      "services": "Services"
+    },
+    "ourTeam": {
+      "title": "Meet Our Expert Team",
+      "subtitle": "Our team of experienced legal professionals brings together deep expertise, local knowledge, and international best practices to deliver exceptional results.",
+      "leadershipTeam": "Leadership Team",
+      "legalExperts": "Legal Experts",
+      "teamStats": "Our Team at a Glance",
+      "stats": {
+        "attorneys": "Expert Attorneys",
+        "experience": "Years Experience",
+        "cases": "Successful Cases",
+        "satisfaction": "Client Satisfaction"
+      },
+      "joinTeam": {
+        "title": "Join Our Growing Team",
+        "subtitle": "We're always looking for talented legal professionals who share our passion for excellence and commitment to client success.",
+        "viewPositions": "View Open Positions",
+        "sendCV": "Send Your CV"
+      },
+      "loading": "Loading team members...",
+      "error": "Failed to load team members. Please try again later."
+    },
+    "blogs": {
+      "title": "Legal Insights & Updates",
+      "subtitle": "Stay informed with the latest legal developments, industry insights, and expert analysis from our team of legal professionals.",
+      "featuredArticle": "Featured Article",
+      "latestArticles": "Latest Articles",
+      "readMore": "Read More",
+      "newsletter": {
+        "title": "Stay Updated with Legal Insights",
+        "subtitle": "Subscribe to our newsletter to receive the latest legal updates, industry insights, and expert analysis delivered directly to your inbox.",
+        "placeholder": "Enter your email address",
+        "subscribe": "Subscribe"
+      },
+      "categories": {
+        "corporateLaw": "Corporate Law",
+        "investmentLaw": "Investment Law",
+        "intellectualProperty": "Intellectual Property",
+        "disputeResolution": "Dispute Resolution",
+        "businessLaw": "Business Law",
+        "contractLaw": "Contract Law"
+      },
+      "posts": {
+        "corporateGovernance": {
+          "title": "Understanding Corporate Governance in the Middle East",
+          "excerpt": "Explore the key principles and practices of corporate governance that are essential for businesses operating in the Middle Eastern market."
+        },
+        "foreignInvestment": {
+          "title": "Foreign Investment Regulations: What You Need to Know",
+          "excerpt": "A comprehensive guide to navigating foreign investment regulations and requirements for international businesses."
+        },
+        "intellectualProperty": {
+          "title": "Intellectual Property Protection in the Digital Age",
+          "excerpt": "How to protect your intellectual property rights in an increasingly digital and global business environment."
+        },
+        "arbitration": {
+          "title": "Arbitration vs. Litigation: Choosing the Right Path",
+          "excerpt": "Understanding the differences between arbitration and litigation to make informed decisions for dispute resolution."
+        },
+        "vision2030": {
+          "title": "Vision 2030: Legal Implications for Businesses",
+          "excerpt": "How Saudi Arabia's Vision 2030 initiative is reshaping the legal landscape for businesses and investors."
+        },
+        "contractLaw": {
+          "title": "Contract Law Essentials for International Trade",
+          "excerpt": "Essential contract law principles that every business should understand when engaging in international trade."
+        }
+      }
+    },
+    "aboutUs": {
+      "title": "About Our Company",
+      "subtitle": "We are a leading legal services company dedicated to providing comprehensive legal solutions for businesses and individuals across the region.",
+      "mission": {
+        "title": "Our Mission",
+        "description": "To provide exceptional legal services that empower our clients to achieve their business objectives while ensuring compliance with local and international regulations."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "description": "To be the most trusted legal partner for businesses seeking growth and success in the dynamic Middle Eastern market."
+      },
+      "story": {
+        "title": "Our Story",
+        "paragraph1": "Founded with a vision to bridge the gap between traditional legal services and modern business needs, our company has grown from a small local practice to a comprehensive legal services provider.",
+        "paragraph2": "Over the years, we have successfully represented hundreds of clients, from startups to multinational corporations, helping them navigate complex legal landscapes and achieve their objectives.",
+        "paragraph3": "Our team of experienced attorneys and legal professionals brings together deep local knowledge and international expertise to deliver results that matter."
+      },
+      "achievements": {
+        "title": "Key Achievements",
+        "items": [
+          "500+ Successful Cases",
+          "15+ Years of Experience",
+          "50+ Expert Attorneys",
+          "98% Client Satisfaction"
+        ]
+      },
+      "values": {
+        "title": "Our Values",
+        "integrity": {
+          "title": "Integrity",
+          "description": "We maintain the highest ethical standards in all our professional relationships."
+        },
+        "excellence": {
+          "title": "Excellence",
+          "description": "We strive for excellence in every aspect of our legal services and client care."
+        },
+        "collaboration": {
+          "title": "Collaboration",
+          "description": "We work closely with our clients to understand their needs and deliver tailored solutions."
+        }
+      }
+    },
+    "contactUs": {
+      "title": "Get in Touch",
+      "subtitle": "Ready to discuss your legal needs? Our team is here to help. Contact us today for a consultation or to learn more about our services.",
+      "form": {
+        "title": "Send Us a Message",
+        "firstName": "First Name *",
+        "lastName": "Last Name *",
+        "email": "Email Address *",
+        "phone": "Phone Number",
+        "company": "Company Name",
+        "service": "Service of Interest",
+        "message": "Message *",
+        "sendMessage": "Send Message",
+        "placeholders": {
+          "firstName": "Enter your first name",
+          "lastName": "Enter your last name",
+          "email": "Enter your email address",
+          "phone": "Enter your phone number",
+          "company": "Enter your company name",
+          "message": "Tell us about your legal needs or questions..."
+        },
+        "serviceOptions": {
+          "select": "Select a service",
+          "legalConsultation": "Legal Consultation Services",
+          "foreignInvestment": "Foreign Investment Services",
+          "contracts": "Contracts",
+          "insurance": "Insurance",
+          "corporateGovernance": "Corporate Governance",
+          "arbitration": "Arbitration",
+          "intellectualProperty": "Intellectual Property",
+          "other": "Other"
+        }
+      },
+      "offices": {
+        "title": "Our Offices",
+        "headOffice": {
+          "title": "Head Office",
+          "address": "123 Business District\nRiyadh, Saudi Arabia 12345"
+        },
+        "dubaiOffice": {
+          "title": "Dubai Office",
+          "address": "456 Sheikh Zayed Road\nDubai, UAE 67890"
+        },
+        "viewOnMap": "View on Map"
+      },
+      "contactMethods": {
+        "title": "Contact Methods",
+        "phone": {
+          "title": "Phone",
+          "value": "+966 11 123 4567"
+        },
+        "email": {
+          "title": "Email",
+          "value": "info@io-tech.com"
+        },
+        "businessHours": {
+          "title": "Business Hours",
+          "value": "Sun - Thu: 8:00 AM - 6:00 PM"
+        }
+      },
+      "emergency": {
+        "title": "Emergency Contact",
+        "subtitle": "For urgent legal matters outside business hours:",
+        "phone": "+966 50 123 4567"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "consultation": {
+          "question": "How quickly can I get a consultation?",
+          "answer": "We typically respond to consultation requests within 24 hours during business days. For urgent matters, please use our emergency contact number."
+        },
+        "remote": {
+          "question": "Do you offer remote consultations?",
+          "answer": "Yes, we offer video consultations and can accommodate clients from anywhere in the world through secure online platforms."
+        },
+        "languages": {
+          "question": "What languages do you work in?",
+          "answer": "Our team is fluent in Arabic, English, and French, ensuring effective communication with clients from diverse backgrounds."
+        },
+        "confidentiality": {
+          "question": "How do you handle confidentiality?",
+          "answer": "We maintain strict attorney-client privilege and confidentiality standards. All client information is protected under professional legal ethics."
+        }
+      }
+    },
+    "services": {
+      "legalConsultation": {
+        "title": "Legal Consultation Services",
+        "description": "Law Firm is one of the leading legal offices that offer exceptional advisory services for both individuals and companies. Our mission is to provide comprehensive and specialized legal support to meet our clients' needs and offer the best legal solutions in various cases and legal fields, we provide our legal consultations services as a follow:",
+        "sections": {
+          "generalLegal": {
+            "title": "General Legal Consultations",
+            "content": "At Law Firm, we provide comprehensive legal consultations covering all legal aspects that our clients may encounter in their daily lives or business activities. Our goal is to offer accurate legal advice based on a deep understanding of local and international laws."
+          },
+          "corporateLegal": {
+            "title": "Corporate Legal Consultations",
+            "content": "We at the Law Firm understand the importance of legal consultations for companies in building and enhancing their businesses.",
+            "items": [
+              "Establishing and registering companies.",
+              "All kinds of contracts and agreements.",
+              "Commercial disputes.",
+              "Compliance with local and international laws and regulations."
+            ]
+          },
+          "individualLegal": {
+            "title": "Individual Legal Consultations",
+            "content": "Law Firm offers customized advisory services for individuals, including:",
+            "items": [
+              "Family issues such as divorce, alimony, and custody.",
+              "Real estate matters like buying, selling, and renting properties.",
+              "Employment issues such as hiring and wrongful termination.",
+              "Criminal cases and defending personal rights."
+            ]
+          }
+        },
+        "conclusion": "At Law Firm, we aim to provide the best legal services to ensure your rights and offer effective legal solutions. Contact us today to receive professional and comprehensive legal consultation."
+      },
+      "foreignInvestment": {
+        "title": "Foreign Investment Services",
+        "description": "End-to-end guidance for foreign investors to enter, establish, or expand in the region with clarity and compliance.",
+        "sections": {
+          "marketEntry": {
+            "title": "Market Entry & Strategy",
+            "content": "Plan market entry based on sector regulations and risk profile.",
+            "items": [
+              "Entity selection",
+              "Licensing pathways",
+              "Tax posture",
+              "Local partnerships"
+            ]
+          },
+          "regulatoryCompliance": {
+            "title": "Regulatory & Compliance",
+            "content": "Navigate investment controls and reporting obligations confidently.",
+            "items": [
+              "Foreign ownership rules",
+              "Sectoral restrictions",
+              "Investment incentives",
+              "Periodic reporting"
+            ]
+          },
+          "operationalSupport": {
+            "title": "Operational Support",
+            "content": "Practical support from incorporation to daily operations.",
+            "items": [
+              "Banking coordination",
+              "Visas & work permits",
+              "Commercial contracts",
+              "Dispute prevention"
+            ]
+          }
+        },
+        "conclusion": "Invest with confidence and a clear, compliant roadmap."
+      },
+      "contracts": {
+        "title": "Contracts",
+        "description": "Drafting, negotiating, and enforcing contracts that protect value and reduce disputes.",
+        "conclusion": "Strong contracts build strong business relationships."
+      },
+      "insurance": {
+        "title": "Insurance",
+        "description": "Coverage review, claims assistance, and dispute resolution for corporate and personal lines.",
+        "conclusion": "Get the coverage you paid for—on time and in full."
+      },
+      "defenseCases": {
+        "title": "Defense in All Cases",
+        "description": "Experienced defense in criminal, civil, administrative, and appellate matters.",
+        "conclusion": "Your rights and interests defended with rigor and clarity."
+      },
+      "banksFinancial": {
+        "title": "Banks and Financial Institutions",
+        "description": "Specialized advisory for banks, lenders, fintechs, and financial intermediaries.",
+        "conclusion": "Align legal risk with financial outcomes."
+      },
+      "corporateGovernance": {
+        "title": "Corporate Governance & Companies Liquidation",
+        "description": "Board advisory, governance frameworks, and orderly liquidations when required.",
+        "conclusion": "Strengthen governance or close with certainty."
+      },
+      "internalRegulations": {
+        "title": "Internal Regulations for Companies",
+        "description": "Design and implement practical internal policies teams actually use.",
+        "conclusion": "Turn policies into daily practice and measurable compliance."
+      },
+      "companiesInstitutions": {
+        "title": "Services for Companies and Institutions",
+        "description": "Full-spectrum legal support for corporates, SMEs, NGOs, and public institutions.",
+        "conclusion": "One legal partner across your organization's lifecycle."
+      },
+      "arbitration": {
+        "title": "Arbitration",
+        "description": "Efficient dispute resolution with enforceable awards and flexible procedures.",
+        "conclusion": "Resolve disputes faster—preserving relationships where possible."
+      },
+      "intellectualProperty": {
+        "title": "Intellectual Property",
+        "description": "Protect, monetize, and enforce IP assets across jurisdictions.",
+        "conclusion": "Your creativity and brand deserve strong protection."
+      },
+      "corporateRestructuring": {
+        "title": "Corporate Restructuring and Reorganization",
+        "description": "Stabilize operations, optimize structures, and navigate debt or ownership changes.",
+        "conclusion": "A structured process to protect value and enable recovery."
+      },
+      "establishingCompanies": {
+        "title": "Establishing National and Foreign Companies",
+        "description": "From idea to incorporation: swift, compliant company formation for locals and foreigners.",
+        "conclusion": "Launch quickly with confidence and full compliance."
+      },
+      "commercialAgencies": {
+        "title": "Commercial Agencies",
+        "description": "Structure, register, and manage compliant agency relationships.",
+        "conclusion": "Well-structured agencies reduce risk and increase performance."
+      },
+      "supportingVision2030": {
+        "title": "Supporting Vision 2030",
+        "description": "Legal enablement for initiatives aligned with national transformation goals.",
+        "conclusion": "Align legal workstreams with Vision 2030 targets and timelines."
+      },
+      "companiesLiquidation": {
+        "title": "Companies Liquidation",
+        "description": "Plan and execute compliant liquidation with minimal disruption and clear outcomes.",
+        "conclusion": "Close with certainty, compliance, and stakeholder clarity."
+      }
+    }
+  }
+}

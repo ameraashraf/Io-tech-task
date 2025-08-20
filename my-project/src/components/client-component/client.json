@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_client_component_clients",
+  "info": {
+    "displayName": "client"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "review": {
+      "type": "text"
+    },
+    "position": {
+      "type": "string"
+    },
+    "clientImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

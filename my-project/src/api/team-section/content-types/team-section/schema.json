@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "team_sections",
+  "info": {
+    "singularName": "team-section",
+    "pluralName": "team-sections",
+    "displayName": "team-section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "sectionTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sectionDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "teamMembers": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "ui-design.team-members",
+      "repeatable": true
+    }
+  }
+}

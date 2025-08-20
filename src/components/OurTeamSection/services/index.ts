@@ -1,0 +1,1 @@
+export { fetchTeamSections } from "./teamSections";

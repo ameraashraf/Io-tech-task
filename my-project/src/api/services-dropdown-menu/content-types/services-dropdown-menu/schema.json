@@ -1,0 +1,14 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services_dropdown_menus",
+  "info": {
+    "singularName": "services-dropdown-menu",
+    "pluralName": "services-dropdown-menus",
+    "displayName": "services-dropdown menu"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}
