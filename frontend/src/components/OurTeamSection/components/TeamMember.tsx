@@ -97,8 +97,8 @@ export default function TeamMember({ member }: TeamMemberProps) {
           <motion.a
             key={key}
             href={member.links?.[key]}
-            target={key === "email" ? "_blank" : undefined}
-            rel={key === "email" ? "noopener noreferrer" : undefined}
+            target="_blank"
+            rel="noopener noreferrer"
             variants={iconVariants}
             whileHover="hover"
             whileTap="tap"
