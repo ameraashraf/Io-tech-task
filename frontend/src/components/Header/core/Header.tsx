@@ -28,7 +28,7 @@ export default function Header() {
   const [searchOpen, setSearchOpen] = React.useState(false);
 
   return (
-    <header className="z-50">
+    <header className="z-50" role="banner">
       {/* Mobile Header - Renders on smaller screens */}
       <MobileHeader
         navLinks={navLinks}
