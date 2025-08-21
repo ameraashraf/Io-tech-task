@@ -1,244 +1,120 @@
-# IO-TECH Legal Services Website
+# IO Tech Task
 
-A modern, bilingual (English/Arabic) legal services website built with Next.js 15 frontend and **Strapi CMS backend**, featuring a comprehensive content management system with dynamic data fetching.
+This project is organized into two main directories:
 
-## �� **Project Overview**
-
-This is a full-stack legal services website that showcases professional legal services, team members, client testimonials, and provides interactive features like search functionality, contact forms, and newsletter subscriptions. The application is built with modern web technologies and follows best practices for performance, accessibility, and user experience.
-
-## 🛠 **Technologies Used**
-
-### **Frontend Framework**
-
-- **Next.js 15** - React framework with App Router for server-side rendering and static generation
-- **React 19** - Latest React version with concurrent features
-- **TypeScript** - Type-safe development with comprehensive type definitions
-
-### **State Management & Data Fetching**
-
-- **Redux Toolkit** - Centralized state management for search functionality and form states
-- **TanStack React Query** - Server state management with caching, background updates, and optimistic updates
-- **Axios** - HTTP client for API communication with Strapi backend
-
-### **Form Handling & Validation**
-
-- **Formik** - Form management with complex validation logic
-- **Yup** - Schema validation for email validation and form fields
-
-### **UI Framework & Styling**
-
-- **Shadcn/ui** - Modern component library built on Radix UI primitives
-- **Tailwind CSS 4** - Utility-first CSS framework for responsive design
-- **Radix UI** - Accessible component primitives (accordion, dialog, dropdown-menu, menubar, slot)
-- **Framer Motion** - Animation library for smooth transitions and micro-interactions
-
-### **Backend & CMS**
-
-- **Strapi 5.22** - Headless CMS backend for content management and API
-- **SQLite** - Database for development and content storage
-- **RESTful API** - Custom API endpoints for dynamic content
-
-### **Internationalization**
-
-- **i18next** - Internationalization framework
-- **react-i18next** - React bindings for i18next
-- **i18next-browser-languagedetector** - Automatic language detection
-
-### **Additional Libraries**
-
-- **Lucide React** - Icon library
-- **React Hot Toast** - Toast notifications
-- **Swiper** - Touch slider for testimonials and content carousels
-- **Class Variance Authority** - Component variant management
-
-## �� **Key Features**
-
-### **🔍 Advanced Search System**
-
-- Real-time search suggestions with debounced input
-- Bilingual search support (English/Arabic)
-- Arabic text normalization for better search matching
-- Pagination for search results
-- Keyboard navigation support
-- Search result categorization (Services, Team, Blog, etc.)
-
-### **�� Email Subscription System**
-
-- Formik integration for form management
-- Real-time email validation
-- Duplicate subscription checking
-- Loading states and error handling
-- Toast notifications for user feedback
-
-### **🌐 Bilingual Support**
-
-- Complete English/Arabic translation
-- RTL (Right-to-Left) layout support for Arabic
-- Language detection and persistence
-- Hydration-safe translation implementation
-- Dynamic content direction switching
-
-### **📱 Responsive Design**
-
-- Mobile-first approach
-- Adaptive layouts for all screen sizes
-- Touch-friendly interactions
-- Optimized mobile navigation
-- Responsive typography and spacing
-
-### **⚡ Performance & SEO**
-
-- Static Site Generation (SSG) for service pages
-- Dynamic metadata generation
-- Image optimization with Next.js Image component
-- Code splitting and lazy loading
-- Optimized font loading with display swap
-- SEO-friendly URLs and structure
-
-### **🎨 Modern UI/UX**
-
-- Consistent design system with Shadcn/ui
-- Smooth animations with Framer Motion
-- Loading states and skeleton screens
-- Accessibility features (ARIA labels, keyboard navigation)
-- Dark mode ready components
-- Micro-interactions and hover effects
-
-## 🏗 **Project Structure**
+## Project Structure
 
 ```
-src/
-├── app/                    # Next.js App Router pages
-│   ├── about-us/          # About us page with components
-│   ├── blogs/             # Blog listing and detail pages
-│   ├── contact-us/        # Contact form and information
-│   ├── our-team/          # Team member profiles
-│   ├── search-results/    # Search functionality
-│   ├── services/          # Service pages with dynamic routing
-│   └── social-responsibility/
-├── components/            # Reusable UI components
-│   ├── Header/           # Navigation and search
-│   ├── Footer/           # Footer with subscription form
-│   ├── HeroSection/      # Landing page hero
-│   ├── OurTeamSection/   # Team member display
-│   ├── Clients/          # Client testimonials
-│   ├── ui/               # Shadcn/ui components
-│   └── shared/           # Common components
-├── features/             # Redux Toolkit slices
-│   ├── search/           # Search state management
-│   └── subscriptionForm/ # Form state management
-├── hooks/                # Custom React hooks
-├── lib/                  # Utility functions and configurations
-├── locales/              # Translation files (en.json, ar.json)
-├── services/             # API service functions
-└── store/                # Redux store configuration
+io-tech-task/
+├── frontend/          # Next.js frontend application
+├── backend/           # Strapi backend application
+├── README.md         # This file
+└── .gitignore        # Git ignore rules
 ```
 
-## 🔧 **Key Implementation Details**
+## Frontend (Next.js)
 
-### **Clean Code Architecture**
+The frontend is a Next.js application located in the `frontend/` directory.
 
-- Modular component structure
-- Custom hooks for business logic separation
-- Type-safe development with TypeScript
-- Consistent naming conventions
-- Comprehensive error handling
+### Getting Started
 
-### **Reusable Components**
-
-- Component composition patterns
-- Props interfaces for type safety
-- Variant-based component design
-- Consistent styling with design tokens
-
-### **Search Logic**
-
-- Debounced search input
-- Bilingual search with Arabic text normalization
-- Categorized search results
-- Pagination with Redux state management
-- Keyboard navigation support
-
-### **Form Validation**
-
-- Formik + Yup schema validation
-- Real-time email validation
-- Duplicate subscription checking
-- Loading states and error handling
-- Accessible form design
-
-### **Performance Optimization**
-
-- Static generation for static pages
-- Image optimization and lazy loading
-- Code splitting and dynamic imports
-- Efficient state management
-- Optimized bundle size
-
-### **Accessibility**
-
-- ARIA labels and roles
-- Keyboard navigation support
-- Screen reader compatibility
-- Focus management
-- Semantic HTML structure
-
-## 🚀 **Getting Started**
-
-1. **Clone the repository**
-2. **Install dependencies**: `npm install`
-3. **Set up environment variables**
-4. **Start the development server**: `npm run dev`
-5. **Start Strapi backend**: `cd my-project && npm run dev`
-
-## 🔧 **Backend Setup (Strapi)**
-
-The project includes a complete Strapi CMS backend in the `my-project/` directory:
-
-- **Content Types**: Hero sections, team members, client testimonials, services
-- **API Endpoints**: RESTful APIs for all content types
-- **Media Management**: Image upload and management
-- **Admin Panel**: User-friendly content management interface
-- **Database**: SQLite for development (easily configurable for production)
-
-## 📝 **Environment Variables**
-
-### Local Development
-
-```env
-NEXT_PUBLIC_API_URL=http://localhost:1337
+```bash
+cd frontend
+npm install
+npm run dev
 ```
 
-### Vercel Deployment
+The frontend will be available at `http://localhost:3000`
 
-For production deployment on Vercel, you need to set the environment variable in your Vercel project settings:
+## Backend (Strapi)
 
-1. Go to your Vercel dashboard
-2. Select your project
-3. Go to Settings → Environment Variables
-4. Add a new variable:
-   - **Name**: `NEXT_PUBLIC_API_URL`
-   - **Value**: Your Strapi backend URL (e.g., `https://your-strapi-app.herokuapp.com` or your deployed Strapi URL)
-   - **Environment**: Production (and Preview if needed)
+The backend is a Strapi CMS application located in the `backend/` directory.
 
-**Important**: Make sure your Strapi backend is deployed and accessible from the internet for the images to load properly.
+### Getting Started
 
-## 🎨 **Design System**
+```bash
+cd backend
+npm install
+npm run develop
+```
 
-The application uses a consistent design system with:
+The Strapi admin panel will be available at `http://localhost:1337/admin`
 
-- Custom color palette
-- Typography scale
-- Spacing system
-- Component variants
-- Animation guidelines
+## Development
 
-## 🌍 **Internationalization**
+### Quick Start (Recommended)
 
-- Complete English/Arabic support
-- RTL layout for Arabic
-- Language detection and persistence
-- Dynamic content switching
-- Translation file management
+Use the development script to start both services simultaneously:
 
-This project demonstrates modern web development practices with a focus on performance, accessibility, and user experience. The **Strapi CMS backend** provides a robust content management system, while the Next.js frontend delivers a fast, responsive, and user-friendly interface, making it a comprehensive full-stack solution for legal service websites.
+```bash
+npm run dev
+```
+
+This will:
+
+- Install dependencies for both frontend and backend
+- Start the Strapi backend on port 1337
+- Start the Next.js frontend on port 3000
+- Provide a clean shutdown with Ctrl+C
+
+### Manual Development
+
+To work on both frontend and backend simultaneously:
+
+1. Start the backend first:
+
+   ```bash
+   cd backend
+   npm run develop
+   ```
+
+2. In a new terminal, start the frontend:
+   ```bash
+   cd frontend
+   npm run dev
+   ```
+
+### Available Scripts
+
+From the root directory, you can use these npm scripts:
+
+```bash
+# Development
+npm run dev                    # Start both services
+npm run dev:frontend          # Start only frontend
+npm run dev:backend           # Start only backend
+
+# Installation
+npm run install:all           # Install dependencies for both
+npm run install:frontend      # Install frontend dependencies
+npm run install:backend       # Install backend dependencies
+
+# Building
+npm run build:frontend        # Build frontend for production
+npm run build:backend         # Build backend for production
+
+# Starting production
+npm run start:frontend        # Start frontend in production mode
+npm run start:backend         # Start backend in production mode
+
+# Cleaning
+npm run clean                 # Clean both projects
+npm run clean:frontend        # Clean frontend build files
+npm run clean:backend         # Clean backend build files
+
+# Linting
+npm run lint:frontend         # Lint frontend code
+npm run lint:backend          # Lint backend code
+```
+
+## Environment Setup
+
+Make sure to configure environment variables for both applications:
+
+- Frontend: Create `.env.local` in the `frontend/` directory
+- Backend: Create `.env` in the `backend/` directory
+
+## Technologies Used
+
+- **Frontend**: Next.js, TypeScript, Tailwind CSS
+- **Backend**: Strapi CMS, Node.js, TypeScript
