@@ -107,7 +107,10 @@ export default function Footer() {
     >
       <div className="container mx-auto">
         {/* Top footer section with social icons */}
-        <motion.div variants={sectionVariants}>
+        <motion.section
+          variants={sectionVariants}
+          aria-label="Footer top section"
+        >
           <FooterTop>
             <SocialIcons>
               {/* Render icons from a static list; index is acceptable as key since order/size is stable. */}
@@ -115,6 +118,8 @@ export default function Footer() {
                 <li key={icon.alt} className="social-icon-item">
                   <a
                     href={icon.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="social-link"
                     aria-label={`Visit ${icon.alt}`}
                   >
@@ -129,7 +134,7 @@ export default function Footer() {
               ))}
             </SocialIcons>
           </FooterTop>
-        </motion.div>
+        </motion.section>
 
         {/* Divider line with animation */}
         <motion.hr
@@ -141,9 +146,12 @@ export default function Footer() {
         />
 
         {/* Bottom footer section with navigation links */}
-        <motion.div variants={sectionVariants}>
+        <motion.section
+          variants={sectionVariants}
+          aria-label="Footer bottom section"
+        >
           <FooterBottom>
-            <nav aria-label={t("footer.socialMedia", "Footer")}>
+            <nav aria-label={t("footer.socialMedia", "Footer navigation")}>
               <FooterLinks>
                 {/* Map configured links to Next.js <Link> components. */}
                 {footerLinks.map((link) => (
@@ -164,7 +172,7 @@ export default function Footer() {
               </FooterLinks>
             </nav>
           </FooterBottom>
-        </motion.div>
+        </motion.section>
       </div>
     </motion.footer>
   );
