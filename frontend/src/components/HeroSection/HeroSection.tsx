@@ -52,9 +52,12 @@ const imageVariants = {
  */
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-auto md:h-[90vh]">
+    <section
+      className="relative w-full h-auto md:h-[90vh]"
+      aria-label="Hero section"
+    >
       {/* Background image container */}
-      <figure className="absolute inset-0 -z-10">
+      <figure className="absolute inset-0 -z-10" role="presentation">
         <Image
           src="/backgroundImage.png"
           alt="Hero background"
@@ -77,7 +80,7 @@ export default function HeroSection() {
         </motion.div>
 
         {/* Profile Image - Hidden on mobile, visible on desktop */}
-        <motion.div
+        <motion.figure
           className="shrink-0 mx-auto md:mx-0 hidden justify-center items-center md:flex"
           variants={imageVariants}
           initial="hidden"
@@ -87,14 +90,14 @@ export default function HeroSection() {
           <div className="relative w-[250px] h-[250px] md:w-[320px] md:h-[320px] mx-auto">
             <Image
               src="/Man.png"
-              alt="Man"
+              alt="Professional legal expert"
               width={320}
               height={320}
               className="object-contain p-6"
               priority // Load this image with high priority
             />
           </div>
-        </motion.div>
+        </motion.figure>
       </div>
     </section>
   );
