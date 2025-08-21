@@ -5,37 +5,12 @@ import ClientHeader from "./ClientsHeader";
 import { motion } from "framer-motion";
 import { useClientSections, transformClientTestimonials } from "./hooks";
 import { useTranslation } from "react-i18next";
-
-/**
- * Animation variants for the clients section container
- * Provides staggered entrance animation for child components
- */
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-      delayChildren: 0.1,
-    },
-  },
-};
-
-/**
- * Animation variants for individual client section items
- * Provides smooth entrance animation with upward movement
- */
-const itemVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: "easeOut" as const,
-    },
-  },
-};
+import {
+  containerVariants,
+  itemVariants,
+} from "@/components/shared/AnimationVariants";
+import LoadingSpinner from "@/components/shared/LoadingSpinner";
+import ErrorMessage from "@/components/shared/ErrorMessage";
 
 /**
  * Clients component displays client testimonials and section information
@@ -62,6 +37,7 @@ export default function Clients() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
+        aria-label="Client testimonials"
       >
         <div className=" container mx-auto flex flex-col gap-15 lg:pt-25 pb-15 pt-10 lg:pb-40 px-4 sm:px-6 lg:px-8">
           <motion.div variants={itemVariants}>
@@ -71,7 +47,7 @@ export default function Clients() {
             className="py-8 flex justify-center"
             variants={itemVariants}
           >
-            <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-white"></div>
+            <LoadingSpinner size="sm" color="white" />
           </motion.div>
         </div>
       </motion.section>
@@ -87,13 +63,17 @@ export default function Clients() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
+        aria-label="Client testimonials"
       >
         <div className=" container mx-auto flex flex-col gap-15 lg:pt-25 pb-15 pt-10 lg:pb-40 px-4 sm:px-6 lg:px-8">
           <motion.div variants={itemVariants}>
             <ClientHeader />
           </motion.div>
           <motion.div className="py-8 text-center" variants={itemVariants}>
-            <p className="text-red-200">Failed to load client testimonials.</p>
+            <ErrorMessage
+              message="Failed to load client testimonials."
+              className="text-red-200"
+            />
           </motion.div>
         </div>
       </motion.section>
@@ -107,6 +87,7 @@ export default function Clients() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
+      aria-label="Client testimonials"
     >
       <div className=" container mx-auto flex flex-col gap-15 lg:pt-25 pb-15 pt-10 lg:pb-40 px-4 sm:px-6 lg:px-8">
         {/* Client section header with title and description */}
