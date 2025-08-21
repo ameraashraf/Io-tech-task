@@ -128,6 +128,8 @@ export const LeadershipSection = ({ members }: { members: Member[] }) => {
                   </motion.a>
                   <motion.a
                     href={member.links.phone}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 flex items-center justify-center hover:opacity-80 transition-opacity"
                     whileHover={{ scale: 1.2, rotate: 360 }}
                     whileTap={{ scale: 0.9 }}
@@ -142,6 +144,8 @@ export const LeadershipSection = ({ members }: { members: Member[] }) => {
                   </motion.a>
                   <motion.a
                     href={member.links.email}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 flex items-center justify-center hover:opacity-80 transition-opacity"
                     whileHover={{ scale: 1.2, rotate: 360 }}
                     whileTap={{ scale: 0.9 }}
