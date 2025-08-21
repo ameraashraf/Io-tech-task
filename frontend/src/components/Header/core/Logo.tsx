@@ -13,6 +13,7 @@ export function Logo({ className }: LogoProps) {
       alt="Logo"
       width={120}
       height={80}
+      sizes="120px"
       className={className}
     />
   );

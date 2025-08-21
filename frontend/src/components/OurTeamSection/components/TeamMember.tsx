@@ -59,6 +59,7 @@ export default function TeamMember({ member }: TeamMemberProps) {
           alt={member.title}
           width={269}
           height={184}
+          loading="lazy"
           onError={(e) => {
             // إذا فشلت الصورة، استخدم الصورة الافتراضية
             const target = e.target as HTMLImageElement;

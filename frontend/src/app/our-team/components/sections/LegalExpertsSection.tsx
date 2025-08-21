@@ -80,6 +80,7 @@ export const LegalExpertsSection = ({ members }: { members: Member[] }) => {
                 src={member.image}
                 alt={member.title}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover"
               />
             </motion.div>

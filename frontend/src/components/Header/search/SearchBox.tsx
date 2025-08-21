@@ -136,7 +136,7 @@ export default function SearchBox({
         <div className="pointer-events-none absolute left-3 rtl:right-3 rtl:left-auto top-1/2 -translate-y-1/2">
           <Image
             src="/Search.png"
-            alt=""
+            alt="Search icon"
             width={20}
             height={20}
             aria-hidden="true"
