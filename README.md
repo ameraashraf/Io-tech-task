@@ -6,6 +6,9 @@ A modern, bilingual (English/Arabic) legal services website built with Next.js 1
 
 This is a full-stack legal services website that showcases professional legal services, team members, client testimonials, and provides interactive features like search functionality, contact forms, and newsletter subscriptions. The application is built with modern web technologies and follows best practices for performance, accessibility, and user experience.
 
+⚡ **Note**: The official submission before the deadline is available in Tag `v1.0.0-submission`.
+The `main` branch contains post-submission improvements and enhancements.
+
 ## 🛠 Technologies Used
 
 ### Frontend Framework
