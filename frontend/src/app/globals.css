@@ -129,6 +129,22 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Global button cursor pointer */
+  button {
+    cursor: pointer;
+  }
+
+  /* Global link cursor pointer */
+  a {
+    cursor: pointer;
+  }
+
+  /* Global interactive elements cursor pointer */
+  [role="button"],
+  [role="option"] {
+    cursor: pointer;
+  }
 }
 
 .hero-pagination .swiper-pagination-bullet {
