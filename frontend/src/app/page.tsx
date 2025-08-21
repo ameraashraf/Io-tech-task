@@ -4,37 +4,10 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 import { OurTeamSection } from "@/components/OurTeamSection";
 import Clients from "@/components/Clients/Clients";
 import { motion } from "framer-motion";
-
-/**
- * Animation variants for the main container
- * Provides staggered entrance animation for child components
- */
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.3, // Delay between each child animation
-      delayChildren: 0.1, // Initial delay before first child starts
-    },
-  },
-};
-
-/**
- * Animation variants for individual sections
- * Provides smooth entrance animation with upward movement
- */
-const sectionVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.8,
-      ease: "easeOut" as const,
-    },
-  },
-};
+import {
+  containerVariants,
+  sectionVariants,
+} from "@/components/shared/AnimationVariants";
 
 /**
  * Home page component that displays the main landing sections
@@ -43,19 +16,26 @@ const sectionVariants = {
  */
 export default function Home() {
   return (
-    <motion.div variants={containerVariants} initial="hidden" animate="visible">
+    <motion.main
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       {/* Hero section with animated entrance */}
-      <motion.div variants={sectionVariants}>
+      <motion.section variants={sectionVariants} aria-label="Hero section">
         <HeroSection />
-      </motion.div>
+      </motion.section>
       {/* Team section with animated entrance */}
-      <motion.div variants={sectionVariants}>
+      <motion.section variants={sectionVariants} aria-label="Our team section">
         <OurTeamSection />
-      </motion.div>
+      </motion.section>
       {/* Client testimonials section with animated entrance */}
-      <motion.div variants={sectionVariants}>
+      <motion.section
+        variants={sectionVariants}
+        aria-label="Client testimonials"
+      >
         <Clients />
-      </motion.div>
-    </motion.div>
+      </motion.section>
+    </motion.main>
   );
 }
