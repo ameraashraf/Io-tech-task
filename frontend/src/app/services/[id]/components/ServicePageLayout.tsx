@@ -23,45 +23,48 @@ export default function ServicePageLayout({
   const { isRTL } = useDirection();
 
   return (
-    <div dir={isRTL ? "rtl" : "ltr"}>
+    <article
+      dir={isRTL ? "rtl" : "ltr"}
+      itemScope
+      itemType="https://schema.org/Service"
+    >
       {/* Hero section with background image */}
-      <div>
+      <section aria-label="Service hero">
         <PageHero alt={service.title} />
-      </div>
+      </section>
 
       {/* Main content body with background styling */}
-      <div
+      <section
         className="w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/services background.png')" }}
+        aria-label="Service content"
       >
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Back navigation link */}
-          <div>
+          <nav aria-label="Breadcrumb navigation">
             <BackLink />
-          </div>
+          </nav>
 
           {/* Service title and description header */}
-          <div>
+          <header>
             <ServiceHeader
               title={service.title}
               description={service.description}
             />
-          </div>
+          </header>
 
           {/* Service content sections */}
-          <div>
-            <ServiceSections sections={service.sections} />
-          </div>
+          <ServiceSections sections={service.sections} />
 
           {/* Service conclusion and call-to-action */}
-          <div>
+          <footer>
             <ServiceConclusion text={service.conclusion} />
-          </div>
+          </footer>
 
           {/* Additional children content (for animations) */}
           {children}
         </div>
-      </div>
-    </div>
+      </section>
+    </article>
   );
 }
