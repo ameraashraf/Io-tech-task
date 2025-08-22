@@ -10,6 +10,7 @@ interface SearchPaginationProps {
   totalResults: number;
   itemsPerPage: number;
   onPageChange: (page: number) => void;
+  onItemsPerPageChange: (items: number) => void;
 }
 
 export default function SearchPagination({
@@ -18,6 +19,7 @@ export default function SearchPagination({
   totalResults,
   itemsPerPage,
   onPageChange,
+  onItemsPerPageChange,
 }: SearchPaginationProps) {
   const { t, ready } = useHydrationSafeTranslation();
   const { isRTL } = useDirection();

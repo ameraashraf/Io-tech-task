@@ -2,10 +2,10 @@
 
 import { motion } from "framer-motion";
 import { useHydrationSafeTranslation } from "@/hooks/useHydrationSafeTranslation";
-import BlogsHeader from "./BlogsHeader";
-import FeaturedPost from "./FeaturedPost";
-import BlogPostsGrid from "./BlogPostsGrid";
-import NewsletterSignup from "./NewsletterSignup";
+import { BlogsHeader } from "./BlogsHeader";
+import { FeaturedPost } from "./FeaturedPost";
+import { BlogPostsGrid } from "./BlogPostsGrid";
+import { NewsletterSignup } from "./NewsletterSignup";
 import { useBlogsPage } from "../hooks";
 import PageLayout from "@/components/shared/PageLayout";
 import LoadingSpinner from "@/components/shared/LoadingSpinner";

@@ -1,6 +1,7 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 import { motion } from "framer-motion";
 import { useHydrationSafeTranslation } from "@/hooks/useHydrationSafeTranslation";
 import { useDirection } from "@/hooks/useDirection";
@@ -9,6 +10,7 @@ import BackLink from "@/components/shared/BackLink";
 import SearchSidebar from "./components/SearchSidebar";
 import SearchResultsHeader from "./components/SearchResultsHeader";
 import SearchResultsList from "./components/SearchResultsList";
+import LoadingSpinner from "@/components/shared/LoadingSpinner";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -98,8 +100,14 @@ function SearchResultsContent() {
 
 export default function SearchResultsPage() {
   return (
-    <motion.div variants={containerVariants} initial="hidden" animate="visible">
-      <SearchResultsContent />
-    </motion.div>
+    <Suspense fallback={<LoadingSpinner message="Loading search results..." />}>
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <SearchResultsContent />
+      </motion.div>
+    </Suspense>
   );
 }
