@@ -30,9 +30,9 @@ export const transformTeamMembers = (
       ? `${API_BASE_URL}${member.memberImage.url}`
       : `${API_BASE_URL}/${member.memberImage.url}`,
     icons: {
-      whatsapp: "/icon1.png",
-      phone: "/phone.png",
-      email: "/message.png",
+      whatsapp: "/whats.svg",
+      phone: "/phone.svg",
+      email: "/mes.svg",
     },
     links: {
       whatsapp: member.Memberlinks.whatsappLink,
